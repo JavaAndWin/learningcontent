@@ -1,12 +1,11 @@
 import ui.GameJFrame;
-import ui.LoginJFrame;
-import ui.RegisterJFrame;
+import ui.LoginJDialog;
+import ui.RegisterJDialog;
 
 public class App {
     public static void main(String[] args) {
 
         new GameJFrame();
-        new LoginJFrame();
-        new RegisterJFrame();
+        new LoginJDialog();
     }
 }
