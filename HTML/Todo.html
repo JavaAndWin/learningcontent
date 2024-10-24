@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Todo App</title>
+</head>
+<body>
+
+    
+
+<div class="box1">
+    <div class="h1">Todo App</div>
+    <div class="todo-form">
+        <input type="text" class="todo-input" placeholder="add todo">
+        <div @click="add" class="todo-button">add todo</div>
+    </div>
+
+    <div class="item completed">
+        <div>
+        <input type="checkbox" >
+        <span class="name">吃饭</span>
+        </div>
+        <div class="del">del</div>
+    </div>
+
+    <div class="item">
+        <div>
+        <input type="checkbox" >
+        <span class="name">吃饭</span>
+        </div>
+        <div class="del">del</div>
+    </div>
+
+    <div class="item">
+        <div>
+        <input type="checkbox" >
+        <span class="name">吃饭</span>
+        </div>
+        <div class="del">del</div>
+    </div>
+</div>
+<style>
+.completed{
+text-decoration: line-through;
+opacity: 0.4;
+}
+
+.h1{
+margin-top: 50px;
+font-size: 30px;
+font-weight: 500;
+}
+
+.todo-input{
+    border: 1px solid #dfe1e5;
+    outline: none;
+    width: 60%;
+    height: 50px;
+    border-radius: 20px 0 0 20px;
+    padding-left: 15px;
+    margin-left: 10%;
+    margin-bottom: 30px;
+}
+
+.todo-button{
+    width: 80px;
+    height: 50px;
+    border-radius: 0 20px 20px 0;
+    background: linear-gradient(
+        to right,
+    rgb(113,65,168),
+    rgba(44,114,251,1)
+    );
+    text-align: center;
+    ;
+    font-size: 15px;
+    color: #dfe1e5;
+    line-height: 50px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.todo-form{
+display: flex;
+margin-top: 20px;
+}
+
+.item{
+    display: flex;
+    border-radius: 20px;
+    width: 60%;
+    height: 50px;
+    box-shadow: rgba(149,157,165,0.2) 0px 8px 20px ;
+    margin: 20px auto;
+    margin-left: 20%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.del{
+     margin-left: 80%;
+     color: red;
+}
+
+.box1{
+    width: 98%;
+    height: 500px;
+    background-color: white;
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 1%;
+    padding-top: 1px;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(
+        to right,
+    rgb(113,65,168),
+    rgba(44,114,251,1)
+    );
+}
+</style>
+</body>
+</html>
+<script>
+       
+
+    function add(){
+     console.log('执行');
+     
+    }
+ </script>
