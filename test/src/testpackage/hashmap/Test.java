@@ -27,7 +27,7 @@ public class Test {
         System.out.println(hm);
 
         System.out.println("----------------------------------------");
-        //遍历Map的三种方法
+       /* //遍历Map的三种方法
         //1.键找值
         Set<String> set = hm.keySet();
         set.forEach(s -> {
@@ -45,15 +45,21 @@ public class Test {
         System.out.println("----------------------------------------");
         //3.lambda表达式
         hm.forEach((s, integer) -> System.out.println(s + ":" + integer));
-
+*/
         //统计最大值
         int max = 0;
-        hm.forEach((s, integer) -> {
-            if(integer > max) {
-                max = integer;
+        Set<String> set = hm.keySet();
+        for (String s : set) {
+            max = Math.max(max, hm.get(s));
+        }
+        System.out.println("最大值为：" + max);
+
+        //得到name
+        System.out.println("票数最多的景点：");
+        for (String s : set) {
+            if (hm.get(s) == max) {
+                System.out.println(s);
             }
-        });
-
-
+        }
     }
 }
