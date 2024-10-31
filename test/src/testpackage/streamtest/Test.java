@@ -12,7 +12,9 @@ public class Test {
         //已使用的流无法再使用
         IntStream stream2 =stream.filter(s->s==3);
 
+        //终结方法：遍历、统计、收集
         stream1.forEach(System.out::println);
         stream2.forEach(System.out::println);
+
     }
 }
